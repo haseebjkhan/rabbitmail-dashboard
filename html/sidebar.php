@@ -10,7 +10,7 @@
                 <span>Navigation</span>
               </li>
               <li>
-                <a href class="index.html">      
+                <a href="index.php">      
                   <span class="pull-right text-muted">
                     <i class="fa fa-fw fa-angle-right text"></i>
                     <i class="fa fa-fw fa-angle-down text-active"></i>
@@ -23,7 +23,7 @@
               
               <!-- Templates -->              
               <li>
-                <a href class="#">      
+                <a href="#">      
                   <span class="pull-right text-muted">
                     <i class="fa fa-fw fa-angle-right text"></i>
                     <i class="fa fa-fw fa-angle-down text-active"></i>
@@ -32,9 +32,10 @@
                   <span>Templates</span>
                 </a>
               </li>
+
               <!-- Campaigns -->
               <li>
-                <a href class="#">      
+                <a href="campaign.php">      
                   <span class="pull-right text-muted">
                     <i class="fa fa-fw fa-angle-right text"></i>
                     <i class="fa fa-fw fa-angle-down text-active"></i>
@@ -46,7 +47,7 @@
 
               <!-- Mailing List -->
               <li>
-                <a href class="#">      
+                <a href="lists.php" class="auto">      
                   <span class="pull-right text-muted">
                     <i class="fa fa-fw fa-angle-right text"></i>
                     <i class="fa fa-fw fa-angle-down text-active"></i>
@@ -58,7 +59,7 @@
               
             <!-- Analytics -->
               <li>
-                <a href class="auto">
+                <a href="analytics.php" class="auto">
                   <span class="pull-right text-muted">
                     <i class="fa fa-fw fa-angle-right text"></i>
                     <i class="fa fa-fw fa-angle-down text-active"></i>

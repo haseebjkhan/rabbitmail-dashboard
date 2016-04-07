@@ -1,7 +1,9 @@
 <?php 
+session_start();
+
 $page_title = "User Dashboard";
-include_once("header.php");
-include_once("sidebar.php");
+require 'header.php';
+require 'sidebar.php';
 ?>
   <!-- content -->
   <div id="content" class="app-content" role="main">
@@ -19,25 +21,10 @@ include_once("sidebar.php");
       <div class="row">
         <div class="col-sm-6 col-xs-12">
           <h1 class="m-n font-thin h3 text-black">Dashboard</h1>
-          <small class="text-muted">Welcome to angulr application</small>
+          <small class="text-muted">Welcome to angulraaa <?php echo $_SESSION['login_customer_email']; ?></small>
         </div>
         <div class="col-sm-6 text-right hidden-xs">
-          <div class="inline m-r text-left">
-            <div class="m-b-xs">1290 <span class="text-muted">items</span></div>
-            <div
-              ui-jq="sparkline" 
-              ui-options="[ 106,108,110,105,110,109,105,104,107,109,105,100,105,102,101,99,98 ], {type:'bar', height:20, barWidth:5, barSpacing:1, barColor:'#dce5ec'}" 
-              class="sparkline inline">loading...
-            </div>
-          </div>
-          <div class="inline text-left">
-            <div class="m-b-xs">$30,000 <span class="text-muted">revenue</span></div>
-            <div
-              ui-jq="sparkline" 
-              ui-options="[ 105,102,106,107,105,104,101,99,98,109,105,100,108,110,105,110,109 ], {type:'bar', height:20, barWidth:5, barSpacing:1, barColor:'#dce5ec'}" 
-              class="sparkline inline">loading...
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
