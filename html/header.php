@@ -1,3 +1,14 @@
+<?php 
+
+session_start();
+
+if(!isset($_SESSION['login_customer_name']) ) {
+  header("location: login.php"); 
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +72,7 @@
                 <img src="img/a0.jpg" alt="...">
                 <i class="on md b-white bottom"></i>
               </span>
-              <span class="hidden-sm hidden-md">Haseeb.Jamil</span> <b class="caret"></b>
+              <span class="hidden-sm hidden-md"><?php echo $_SESSION['login_customer_name']; ?></span> <b class="caret"></b>
             </a>
             <!-- dropdown -->
             <ul class="dropdown-menu animated fadeInRight w">

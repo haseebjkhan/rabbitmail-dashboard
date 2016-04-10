@@ -1,6 +1,4 @@
 <?php 
-session_start();
-
 $page_title = "User Dashboard";
 require 'header.php';
 require 'sidebar.php';
@@ -21,7 +19,7 @@ require 'sidebar.php';
       <div class="row">
         <div class="col-sm-6 col-xs-12">
           <h1 class="m-n font-thin h3 text-black">Dashboard</h1>
-          <small class="text-muted">Welcome to angulraaa <?php echo $_SESSION['login_customer_email']; ?></small>
+          <small class="text-muted">Welcome to angulraaa <?php echo $_SESSION['login_customer_name']; ?></small>
         </div>
         <div class="col-sm-6 text-right hidden-xs">
           
